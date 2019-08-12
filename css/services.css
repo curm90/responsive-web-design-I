@@ -58,47 +58,60 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-
 .container {
 	max-width: 960px;
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-}
-
-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 460px;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
 }
 
 nav {
-	display: flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  padding: 16px 0;
+  margin-bottom: 32px;
 }
 
 nav ul {
   display: flex;
-  width: 700px;
+  align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 
 nav ul li a {
-	text-decoration: none;
-	color: #b4b3b3;
+  text-decoration: none;
+  color: #b8b6b6;
+  font-weight: 600;
 }
 
 .logo-container {
   margin-left: 32px;
 }
 
-.header-info {
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+header {
   display: flex;
   flex-direction: column;
-  margin: 0 32px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header-info {
+  padding: 32px;
 }
 
 .main-header {
@@ -115,6 +128,9 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 32px 0;
 }
 
 .service-item {
@@ -137,7 +153,7 @@ button {
 .bottom-section {
   display: flex;
   justify-content: space-around;
-  margin: 16px 0;
+  padding-top: 48px;
 }
 
 .facts-section {
