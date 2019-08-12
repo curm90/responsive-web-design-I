@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 460px;
+}
+
+nav {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  width: 700px;
+  justify-content: space-around;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #b4b3b3;
+}
+
+.logo-container {
+  margin-left: 32px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.main-header {
+  font-size: 24px;
+}
+
+.line-break {
+  background: black;
+  height: 1px;
+  margin: 32px 48px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-item {
+  background: #ecebeb;
+  width: 400px;
+  border: 1px solid black;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+button {
+  padding: 8px 24px; 
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 16px 0;
+}
+
+.facts-section {
+  width: 400px;
+}
+
+.facts-section ul li {
+  padding: 8px 0px;
+  list-style: square;
+  margin: 0 16px;
+}
+
+.facts-section p {
+  margin-bottom: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 16px 0;
+  height: 100px;
+}
+
